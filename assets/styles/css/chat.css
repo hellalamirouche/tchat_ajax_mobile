@@ -1,0 +1,261 @@
+form{
+  background: #382d27 !important;
+}
+h2{
+  background:rose;
+}
+#valider,#connexion{
+color: #fff;
+background-color: #050607;
+
+}
+/* le libelé de upload photo dans le formulaire inscription */
+.custom-file-label::after{
+  content:"Télécharge" !important;
+}
+
+.discussion{
+  overflow-x: hidden;
+}
+
+.connecte{
+    height: 15px;
+    width: 15px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+.deconnecte{
+  height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.titre-chat{
+  background-color:#e9e8e6;
+}
+
+.avatar  {
+  border-radius: 50%;
+  height: 49px;
+  width: 49px ;
+  float:right;
+}
+/** barre de recherche ***/
+.recherche{
+  height:55px;
+}
+.recherche input{
+  border-radius:10px;
+}
+
+
+/*** list contact  **/
+
+.header-list_contact{
+  height:12%;
+}
+
+/*** le bloc de discussion **/
+.nom-contact-selectionne {
+  background-color: #454040;
+  border-radius:0px !important;
+}
+
+.nom-contact-selectionne a{
+position: relative ;
+top: 12px ;
+color:white;
+text-decoration: none;
+}
+.nom-contact-selectionne a:hover{
+  color:red;
+}
+
+#discussion{
+  height:100vh;
+}
+.contenu_discussion{
+  height:100vh;
+}
+#header-discussion{
+  height:10vh;
+}
+
+/****messages ***/
+.discussion{
+background-color: #2f1c33;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='416' height='416' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%233b4437' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+}
+/*envoyer**/
+
+.avatar-msg {
+  border-radius: 50%;
+  height: 49px;
+  width: 49px ;
+  
+}
+
+.text-message-envoyer{
+  width:400px;
+  border-radius: 26px 29px 29px 26px;
+  margin-left:35px;
+  background:#76a5ff;
+  position:relative;
+  border:1px solid #444;
+  padding:10px ; 
+}
+
+.text-message-envoyer:after,.text-message-recu:after{
+    right: 99%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.text-message-envoyer:after {
+    border-color: rgba(68, 68, 68, 0);
+    border-right-color: #76a5ff;;
+    border-width: 15px;
+    margin-top: -15px;
+    
+}
+
+
+/***message recu ***/
+.text-message-recu{
+  width:400px;
+  border-radius: 20px 29px 29px 20px;
+  margin-left:40px;
+  background:#e9e8e6;
+  position:relative;
+  border:1px solid #444;
+  left: 30px;
+  padding:10px ; 
+}
+
+.message-recu{
+  margin-right: 50px;
+}
+.text-message-recu:after {
+  border-color: rgba(68, 68, 68, 0);
+  border-right-color: #e9e8e6;
+  border-width: 15px;
+  margin-top: -15px;
+  transform: rotate(180deg);
+  left:99%;
+}
+.image_message-recu{
+  position: relative;
+  left: 97%;
+  height:100%;
+  
+}
+ /* formulaire tchat */
+ .formulaire{
+  height:9vh;
+  margin-bottom:5px;
+ 
+}
+ .icone_envoyer_tchat{
+   font-size:1.4em;
+ }
+ #envoyer {
+  border-right: 0px ;
+  border-top: 0px;
+  border-left: 0px;
+  border-bottom: 1px solid black;
+  font-size: 1.5em;
+}
+/* icone file  */
+#file_icone{
+  border-bottom: 1px solid black;
+    /* padding-top: 20px !important; */
+    font-size: 1.8em;
+    padding-left: 18px;
+    background-color: white;
+    padding-top: 18px !important;
+    /* margin-top: 1px; */
+    /* border: 0px; */
+    border-left: 0px;
+}
+
+/****mobile****/
+
+@media (max-width: 768px) { 
+  
+  .conteneur-principal{
+    padding:0px !important;
+    background-color: white !important;
+  }
+/* liste contact **/
+  #liste_contact{
+   
+    height:100%;
+  }
+  /** discussion **/
+  .image_message-recu{
+    position: relative;
+    left: 95%;
+    
+  }
+  .text-message-recu{
+    width:100%;
+    margin-left:0px;
+    background:#eeeeee;
+    position:relative;
+    border:1px solid #444;
+    padding:10px ; 
+    left: -13% !important;
+  }
+ 
+#header-discussion{
+  height: 46px !important;
+}
+  .discussion{
+  
+    height: 79%;
+    padding-bottom: 12% !important;
+    margin-bottom: 12% !important;
+  }
+  .footer_list_contact{
+    height:12%;
+  }
+
+  .formulaire{
+    position:absolute;
+    bottom:0px;
+    position:fixed;
+    bottom:-5px;
+    height:9%;
+  }
+  /***icone de tchat  */
+  .icone_form_tchat{
+    font-size:1.4em;
+  }
+
+  .image_chat{
+    width:100% !important
+  }
+
+}
+@media (max-width: 350px) { 
+  .image_message-recu{
+    display:none;
+  }
+
+  .text-message-recu {
+    width: 100% !important;
+    position: relative !important;
+    border: 1px solid #444 !important;
+    padding: 10px !important;
+    left: 14% !important;
+}
+
+}
